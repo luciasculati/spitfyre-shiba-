@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='icon' href='favicon.png' type='image/x-icon'/>
+    <title>Spitfyre Shiba</title>
+    <style>
+        * {
+        }
+
+        .wrapper {
+            width: 1180px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .home {
+            width: 180px;
+            height: 30px;
+            display: inline;
+            font-family: Cochin, serif;
+            font-size: 17px;
+            background-color: black;
+            color: white;
+        }
+
+        button {
+            border-color: black;
+            background-color: white;
+            color: black;
+            width: 180px;
+            height: 30px;
+            display: inline;
+            font-family: Cochin, Serif;
+            font-size: 17px;
+            margin-right: auto;
+            margin-left: auto;
+            align: center;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        h1 {
+            font-family: Cochin, Serif;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .logo {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+
+        .footer {
+            background-color: black;
+            color: white;
+            font-family: Cochin, Serif;
+            height: 125px;
+            padding-left: 30px;
+            text-align: left;
+        }
+
+        .slideshow {
+            width: 1180px;
+            margin-left: 175px;
+
+        }
+
+        .menu-bar {
+            text-align: center;
+        }
+
+        .seal {
+            float: left;
+            margin-left: 30px;
+
+        }
+
+        .license {
+            float: left;
+            padding-left: 462px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--cherry blossom and logo picture-->
+
+<div class="wrapper">
+    <img alt="chery blossom and logo" class="logo" height="172" src="cherryblossoms.png" width="1180">
+    <div class="menu-bar">
+        <h1>SPITFYRE SHIBA</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!--main menu buttons-->
+
+
+        <div>
+
+            <a href="spitfyreshiba2.html" style="text-decoration:none">
+                <button class="home">home</button>
+            </a>
+
+            <a href="available%20pups.html" style="text-decoration:none">
+                <button class="available pups">available pups</button>
+            </a>
+
+            <a href="adoption%20process.html" style="text-decoration:none">
+                <button class="adoption process">adoption process</button>
+            </a>
+
+            <a href="Shiba%20info.html" style="text-decoration:none">
+                <button class="shiba info"> shiba info</button>
+            </a>
+
+            <a href="FAQ.html" class="faq" style="text-decoration:none">
+                <button>FAQ</button>
+            </a>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!--shiba slide show! -->
+
+
+        <div class="slideshow">
+            <img align="center" alt=shibaone class="mySlides" src="slideshow1.jpg" style="width:70%">
+            <img alt=shibatwo class="mySlides" src="slideshow2.jpg" style="width:70%">
+            <img alt=shibathree class="mySlides" src="slideshow3.jpg" style="width:70%">
+        </div>
+        <br>
+        <br>
+        <br>
+        <!--buttons for slide show-->
+
+        <div class="buttons">
+            <button onclick="plusDivs(-1)">&#10094;</button>
+            <button onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <!--seals-->
+
+
+        <img class="license" height="108" src="ylicensed-commercial-breederxsmall copy.png" width="108"/>
+
+        <img class="seal" height="104" src="yseal copy.png" width="120"/>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!--footer -->
+
+
+        <div class="footer">
+            <br>
+            <header>CONTACT US:</header>
+            <br>
+            <header>Phone: (218) 652-4141</header>
+            <br>
+            <header>Email: pinek@digitaljam.com</header>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+
+
+        </script>
+    </div><!--end of menu bar -->
+</div><!--end of wrapper -->
+</body>
+
+</html>
+
